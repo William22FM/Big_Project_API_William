@@ -1,0 +1,66 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Main Suites,,One Flow Test Cases,,2021-08-30 16:33:17,2021-08-30 16:33:34,"16,656s",FAILED
+,,,,,,,
+Test Cases/Admin/Get Organization Information,,,,2021-08-30 16:33:18,2021-08-30 16:33:22,"4,337s",FAILED
+"response = sendRequest(findTestObject(""Admin/Get Organizations"", [""tokenaut"":tokenaut, ""url"":url]))",,,,2021-08-30 16:33:18,2021-08-30 16:33:22,"3,651s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-08-30 16:33:22,2021-08-30 16:33:22,"0,109s",FAILED
+,,,,,,,
+Test Cases/Admin/Get User,,,,2021-08-30 16:33:22,2021-08-30 16:33:23,"0,765s",FAILED
+"response = sendRequest(findTestObject(""Admin/Get Users"", [""tokenaut"":tokenaut, ""url"":url]))",,,,2021-08-30 16:33:22,2021-08-30 16:33:23,"0,391s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-08-30 16:33:23,2021-08-30 16:33:23,"0,016s",FAILED
+,,,,,,,
+Test Cases/Admin/User Login Empty Password,,,,2021-08-30 16:33:23,2021-08-30 16:33:23,"0,637s",FAILED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":username, ""password"":""""]))",,,,2021-08-30 16:33:23,2021-08-30 16:33:23,"0,327s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-08-30 16:33:23,2021-08-30 16:33:23,"0,013s",FAILED
+,,,,,,,
+Test Cases/Admin/User Login Empty Username,,,,2021-08-30 16:33:23,2021-08-30 16:33:24,"0,786s",FAILED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":"""", ""password"":password]))",,,,2021-08-30 16:33:24,2021-08-30 16:33:24,"0,407s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-08-30 16:33:24,2021-08-30 16:33:24,"0,031s",FAILED
+,,,,,,,
+Test Cases/Admin/User Login Empty,,,,2021-08-30 16:33:24,2021-08-30 16:33:25,"0,692s",FAILED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":"""", ""password"":""""]))",,,,2021-08-30 16:33:25,2021-08-30 16:33:25,"0,362s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-08-30 16:33:25,2021-08-30 16:33:25,"0,025s",FAILED
+,,,,,,,
+Test Cases/Admin/User Login Invalid Password,,,,2021-08-30 16:33:25,2021-08-30 16:33:26,"0,579s",FAILED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":username, ""password"":inpassword]))",,,,2021-08-30 16:33:25,2021-08-30 16:33:25,"0,248s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-08-30 16:33:25,2021-08-30 16:33:26,"0,006s",FAILED
+,,,,,,,
+Test Cases/Admin/User Login Invalid Username,,,,2021-08-30 16:33:26,2021-08-30 16:33:26,"0,750s",FAILED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":inusername, ""password"":password]))",,,,2021-08-30 16:33:26,2021-08-30 16:33:26,"0,381s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-08-30 16:33:26,2021-08-30 16:33:26,"0,000s",FAILED
+,,,,,,,
+Test Cases/Admin/User Login,,,,2021-08-30 16:33:26,2021-08-30 16:33:27,"0,929s",FAILED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":username, ""password"":password]))",,,,2021-08-30 16:33:27,2021-08-30 16:33:27,"0,561s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-08-30 16:33:27,2021-08-30 16:33:27,"0,024s",FAILED
+,,,,,,,
+Test Cases/Attandance/Punch In Empty,,,,2021-08-30 16:33:27,2021-08-30 16:33:28,"0,890s",FAILED
+"response = sendRequest(findTestObject(""Attendance/Punch In"", [""timezone"":"""", ""note"":"""", ""datetime"":""""]))",,,,2021-08-30 16:33:27,2021-08-30 16:33:28,"0,608s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-08-30 16:33:28,2021-08-30 16:33:28,"0,007s",FAILED
+,,,,,,,
+Test Cases/Attandance/Punch In,,,,2021-08-30 16:33:28,2021-08-30 16:33:29,"0,761s",FAILED
+"response = sendRequest(findTestObject(""Attendance/Punch In"", [""timezone"":timezone, ""note"":notePi, ""datetime"":datetime]))",,,,2021-08-30 16:33:29,2021-08-30 16:33:29,"0,319s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-08-30 16:33:29,2021-08-30 16:33:29,"0,011s",FAILED
+,,,,,,,
+Test Cases/Attandance/Punch Out Empty,,,,2021-08-30 16:33:29,2021-08-30 16:33:29,"0,596s",FAILED
+"response = sendRequest(findTestObject(""Attendance/Punch Out"", [""timezone"":"""", ""note"":"""", ""datetime"":""""]))",,,,2021-08-30 16:33:29,2021-08-30 16:33:29,"0,335s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-08-30 16:33:29,2021-08-30 16:33:29,"0,011s",FAILED
+,,,,,,,
+Test Cases/Attandance/Punch Out,,,,2021-08-30 16:33:29,2021-08-30 16:33:30,"0,598s",FAILED
+"response = sendRequest(findTestObject(""Attendance/Punch Out"", [""timezone"":timezone, ""note"":notePi, ""datetime"":datetime]))",,,,2021-08-30 16:33:30,2021-08-30 16:33:30,"0,294s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-08-30 16:33:30,2021-08-30 16:33:30,"0,015s",FAILED
+,,,,,,,
+Test Cases/Employee/Employee Detail Id Not List,,,,2021-08-30 16:33:30,2021-08-30 16:33:31,"0,625s",FAILED
+"response = sendRequest(findTestObject(""Employee/Employee Detail"", [""id"":inid]))",,,,2021-08-30 16:33:30,2021-08-30 16:33:31,"0,288s",PASSED
+"verifyResponseStatusCode(response, 404)",,,,2021-08-30 16:33:31,2021-08-30 16:33:31,"0,017s",FAILED
+,,,,,,,
+Test Cases/Employee/Employee Detail,,,,2021-08-30 16:33:31,2021-08-30 16:33:32,"1,613s",FAILED
+"response = sendRequest(findTestObject(""Employee/Employee Detail"", [""tokenaut"":tokenaut, ""url"":url, ""id"":id]))",,,,2021-08-30 16:33:31,2021-08-30 16:33:32,"1,283s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-08-30 16:33:32,2021-08-30 16:33:32,"0,011s",FAILED
+,,,,,,,
+Test Cases/Employee/Save Employee Code Exists,,,,2021-08-30 16:33:32,2021-08-30 16:33:33,"0,776s",FAILED
+"response = sendRequest(findTestObject(""Employee/Save Employee""))",,,,2021-08-30 16:33:33,2021-08-30 16:33:33,"0,483s",PASSED
+"verifyResponseStatusCode(response, 400)",,,,2021-08-30 16:33:33,2021-08-30 16:33:33,"0,016s",FAILED
+,,,,,,,
+Test Cases/Employee/Save Employee,,,,2021-08-30 16:33:33,2021-08-30 16:33:34,"0,699s",FAILED
+"response = sendRequest(findTestObject(""Employee/Save Employee""))",,,,2021-08-30 16:33:33,2021-08-30 16:33:34,"0,417s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-08-30 16:33:34,2021-08-30 16:33:34,"0,005s",FAILED

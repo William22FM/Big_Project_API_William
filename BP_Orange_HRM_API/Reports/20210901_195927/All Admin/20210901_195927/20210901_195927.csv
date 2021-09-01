@@ -1,0 +1,43 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+All Admin,,,,2021-09-01 20:00:22,2021-09-01 20:00:53,"31,612s",FAILED
+,,,,,,,
+Test Cases/Admin/Get Organization Information,,,,2021-09-01 20:00:22,2021-09-01 20:00:46,"23,950s",FAILED
+"response = sendRequest(findTestObject(""Admin/Get Organizations""))",,,,2021-09-01 20:00:23,2021-09-01 20:00:46,"23,407s",FAILED
+,,,,,,,
+Test Cases/Admin/Get User,,,,2021-09-01 20:00:46,2021-09-01 20:00:47,"1,309s",PASSED
+"response = sendRequest(findTestObject(""Admin/Get Users""))",,,,2021-09-01 20:00:47,2021-09-01 20:00:47,"0,641s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-09-01 20:00:47,2021-09-01 20:00:47,"0,034s",PASSED
+"verifyElementPropertyValue(response, ""data[0].employeeName"", ""Zidan Aqila Muhammad"")",,,,2021-09-01 20:00:47,2021-09-01 20:00:47,"0,064s",PASSED
+"verifyElementPropertyValue(response, ""data[1].employeeName"", ""asdw sasd ok"")",,,,2021-09-01 20:00:47,2021-09-01 20:00:47,"0,019s",PASSED
+,,,,,,,
+Test Cases/Admin/User Login Empty Password,,,,2021-09-01 20:00:47,2021-09-01 20:00:48,"0,624s",PASSED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":username, ""password"":""""]))",,,,2021-09-01 20:00:48,2021-09-01 20:00:48,"0,311s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-09-01 20:00:48,2021-09-01 20:00:48,"0,000s",PASSED
+"verifyElementPropertyValue(response, ""error.text"", ""password must not be empty"")",,,,2021-09-01 20:00:48,2021-09-01 20:00:48,"0,025s",PASSED
+,,,,,,,
+Test Cases/Admin/User Login Empty Username,,,,2021-09-01 20:00:48,2021-09-01 20:00:49,"0,645s",PASSED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":"""", ""password"":password]))",,,,2021-09-01 20:00:48,2021-09-01 20:00:49,"0,352s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-09-01 20:00:49,2021-09-01 20:00:49,"0,000s",PASSED
+"verifyElementPropertyValue(response, ""error.text"", ""username must not be empty"")",,,,2021-09-01 20:00:49,2021-09-01 20:00:49,"0,025s",PASSED
+,,,,,,,
+Test Cases/Admin/User Login Empty,,,,2021-09-01 20:00:49,2021-09-01 20:00:49,"0,575s",PASSED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":"""", ""password"":""""]))",,,,2021-09-01 20:00:49,2021-09-01 20:00:49,"0,320s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-09-01 20:00:49,2021-09-01 20:00:49,"0,006s",PASSED
+"verifyElementPropertyValue(response, ""error.text"", ""username must not be empty"")",,,,2021-09-01 20:00:49,2021-09-01 20:00:49,"0,020s",PASSED
+,,,,,,,
+Test Cases/Admin/User Login Invalid Password,,,,2021-09-01 20:00:49,2021-09-01 20:00:51,"1,629s",PASSED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":username, ""password"":inpassword]))",,,,2021-09-01 20:00:50,2021-09-01 20:00:51,"1,260s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-09-01 20:00:51,2021-09-01 20:00:51,"0,005s",PASSED
+"verifyElementPropertyValue(response, ""error.text"", ""Credentials Are Wrong Please Try Again"")",,,,2021-09-01 20:00:51,2021-09-01 20:00:51,"0,048s",PASSED
+,,,,,,,
+Test Cases/Admin/User Login Invalid Username,,,,2021-09-01 20:00:51,2021-09-01 20:00:51,"0,551s",PASSED
+"response = sendRequest(findTestObject(""Admin/User Login"", [""username"":inusername, ""password"":password]))",,,,2021-09-01 20:00:51,2021-09-01 20:00:51,"0,243s",PASSED
+"verifyResponseStatusCode(response, 202)",,,,2021-09-01 20:00:51,2021-09-01 20:00:51,"0,003s",PASSED
+"verifyElementPropertyValue(response, ""error.text"", ""Credentials Are Wrong Please Try Again"")",,,,2021-09-01 20:00:51,2021-09-01 20:00:51,"0,017s",PASSED
+,,,,,,,
+Test Cases/Admin/User Login,,,,2021-09-01 20:00:52,2021-09-01 20:00:53,"1,685s",PASSED
+"response = sendRequest(findTestObject(""Admin/User Login""))",,,,2021-09-01 20:00:52,2021-09-01 20:00:53,"1,326s",PASSED
+"verifyResponseStatusCode(response, 200)",,,,2021-09-01 20:00:53,2021-09-01 20:00:53,"0,033s",PASSED
+"verifyElementPropertyValue(response, ""user.userRole"", ""Admin"")",,,,2021-09-01 20:00:53,2021-09-01 20:00:53,"0,031s",PASSED
+"verifyElementPropertyValue(response, ""user.status"", ""Enabled"")",,,,2021-09-01 20:00:53,2021-09-01 20:00:53,"0,022s",PASSED
+"verifyElementPropertyValue(response, ""user.employeeName"", ""Zidan Aqila Muhammad"")",,,,2021-09-01 20:00:53,2021-09-01 20:00:53,"0,011s",PASSED

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Main Suites" time="48.968" tests="16" failures="1" errors="0">
+   <testsuite name="Main Suites" tests="16" failures="1" errors="0" time="48.968" skipped="0" timestamp="2021-08-30 16:36:45" hostname="William FM - 192.168.189.1" id="Test Suites/Main Suites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\QA training\\Git\\Big Project\\BP_API_ORANGE_HRM\\BP_Orange_HRM_API\\Reports\\20210830_163621\\Main Suites\\20210830_163621"/>
+         <property name="logFiles" value="D:\\QA training\\Git\\Big Project\\BP_API_ORANGE_HRM\\BP_Orange_HRM_API\\Reports\\20210830_163621\\Main Suites\\20210830_163621\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="William FM - 192.168.189.1"/>
+         <property name="hostAddress" value="192.168.189.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Get Organization Information" time="12.762" classname="Test Cases/Admin/Get Organization Information" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:36:45 - [TEST_CASE][PASSED] - Test Cases/Admin/Get Organization Information: Test Cases/Admin/Get Organization Information
+
+2021-08-30 16:36:46 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/Get Organizations", ["tokenaut":tokenaut, "url":url])): Send request successfully
+
+2021-08-30 16:36:57 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\0.har
+
+2021-08-30 16:36:58 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:36:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-08-30 16:36:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:36:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.name", "Sekolah QA"): Verify element property value successfully
+
+2021-08-30 16:36:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:36:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.numberOfEmployees", 135): Verify element property value successfully
+
+2021-08-30 16:36:58 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Get User" time="12.92" classname="Test Cases/Admin/Get User" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:36:58 - [TEST_CASE][PASSED] - Test Cases/Admin/Get User: Test Cases/Admin/Get User
+
+2021-08-30 16:36:58 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/Get Users", ["tokenaut":tokenaut, "url":url])): Send request successfully
+
+2021-08-30 16:37:11 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\1.har
+
+2021-08-30 16:37:11 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:11 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-08-30 16:37:11 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:11 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].employeeName", "Zidan Aqila Muhammad"): Verify element property value successfully
+
+2021-08-30 16:37:11 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:37:11 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[1].employeeName", "asdw sasd ok"): Verify element property value successfully
+
+2021-08-30 16:37:11 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Empty Password" time="0.956" classname="Test Cases/Admin/User Login Empty Password" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:11 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Empty Password: Test Cases/Admin/User Login Empty Password
+
+2021-08-30 16:37:11 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":username, "password":""])): Send request successfully
+
+2021-08-30 16:37:12 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\2.har
+
+2021-08-30 16:37:12 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:12 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-08-30 16:37:12 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:12 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "password must not be empty"): Verify element property value successfully
+
+2021-08-30 16:37:12 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Empty Username" time="0.827" classname="Test Cases/Admin/User Login Empty Username" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:12 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Empty Username: Test Cases/Admin/User Login Empty Username
+
+2021-08-30 16:37:12 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":"", "password":password])): Send request successfully
+
+2021-08-30 16:37:12 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\3.har
+
+2021-08-30 16:37:12 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:12 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-08-30 16:37:12 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:13 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "username must not be empty"): Verify element property value successfully
+
+2021-08-30 16:37:13 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Empty" time="1.466" classname="Test Cases/Admin/User Login Empty" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:13 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Empty: Test Cases/Admin/User Login Empty
+
+2021-08-30 16:37:13 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":"", "password":""])): Send request successfully
+
+2021-08-30 16:37:14 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\4.har
+
+2021-08-30 16:37:14 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-08-30 16:37:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "username must not be empty"): Verify element property value successfully
+
+2021-08-30 16:37:14 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Invalid Password" time="1.27" classname="Test Cases/Admin/User Login Invalid Password" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:14 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Invalid Password: Test Cases/Admin/User Login Invalid Password
+
+2021-08-30 16:37:14 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":username, "password":inpassword])): Send request successfully
+
+2021-08-30 16:37:15 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\5.har
+
+2021-08-30 16:37:15 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-08-30 16:37:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "Credentials Are Wrong Please Try Again"): Verify element property value successfully
+
+2021-08-30 16:37:15 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Invalid Username" time="1.327" classname="Test Cases/Admin/User Login Invalid Username" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:15 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Invalid Username: Test Cases/Admin/User Login Invalid Username
+
+2021-08-30 16:37:16 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":inusername, "password":password])): Send request successfully
+
+2021-08-30 16:37:17 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\6.har
+
+2021-08-30 16:37:17 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-08-30 16:37:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "Credentials Are Wrong Please Try Again"): Verify element property value successfully
+
+2021-08-30 16:37:17 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login" time="4.55" classname="Test Cases/Admin/User Login" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:17 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login: Test Cases/Admin/User Login
+
+2021-08-30 16:37:17 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":username, "password":password])): Send request successfully
+
+2021-08-30 16:37:21 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\7.har
+
+2021-08-30 16:37:21 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-08-30 16:37:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "user.userRole", "Admin"): Verify element property value successfully
+
+2021-08-30 16:37:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:37:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "user.status", "Enabled"): Verify element property value successfully
+
+2021-08-30 16:37:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:37:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "user.employeeName", "Zidan Aqila Muhammad"): Verify element property value successfully
+
+2021-08-30 16:37:21 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Attandance/Punch In Empty" time="0.856" classname="Test Cases/Attandance/Punch In Empty" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:21 - [TEST_CASE][PASSED] - Test Cases/Attandance/Punch In Empty: Test Cases/Attandance/Punch In Empty
+
+2021-08-30 16:37:21 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Attendance/Punch In", ["timezone":"", "note":"", "datetime":""])): Send request successfully
+
+2021-08-30 16:37:22 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\8.har
+
+2021-08-30 16:37:22 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-08-30 16:37:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "success", "null"): Verify element property value successfully
+
+2021-08-30 16:37:22 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Attandance/Punch In" time="0.918" classname="Test Cases/Attandance/Punch In" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:22 - [TEST_CASE][PASSED] - Test Cases/Attandance/Punch In: Test Cases/Attandance/Punch In
+
+2021-08-30 16:37:22 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Attendance/Punch In", ["timezone":timezone, "note":notePi, "datetime":datetime])): Send request successfully
+
+2021-08-30 16:37:23 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\9.har
+
+2021-08-30 16:37:23 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-08-30 16:37:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "success", "Successfully Punched In"): Verify element property value successfully
+
+2021-08-30 16:37:23 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Attandance/Punch Out Empty" time="4.013" classname="Test Cases/Attandance/Punch Out Empty" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:23 - [TEST_CASE][PASSED] - Test Cases/Attandance/Punch Out Empty: Test Cases/Attandance/Punch Out Empty
+
+2021-08-30 16:37:23 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Attendance/Punch Out", ["timezone":"", "note":"", "datetime":""])): Send request successfully
+
+2021-08-30 16:37:27 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\10.har
+
+2021-08-30 16:37:27 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-08-30 16:37:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "success", "null"): Verify element property value successfully
+
+2021-08-30 16:37:27 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Attandance/Punch Out" time="1.71" classname="Test Cases/Attandance/Punch Out" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:27 - [TEST_CASE][PASSED] - Test Cases/Attandance/Punch Out: Test Cases/Attandance/Punch Out
+
+2021-08-30 16:37:27 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Attendance/Punch Out", ["timezone":timezone, "note":notePi, "datetime":datetime])): Send request successfully
+
+2021-08-30 16:37:29 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\11.har
+
+2021-08-30 16:37:29 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-08-30 16:37:29 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:29 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "success", "Successfully Punched Out"): Verify element property value successfully
+
+2021-08-30 16:37:29 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Employee/Employee Detail Id Not List" time="0.839" classname="Test Cases/Employee/Employee Detail Id Not List" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:29 - [TEST_CASE][PASSED] - Test Cases/Employee/Employee Detail Id Not List: Test Cases/Employee/Employee Detail Id Not List
+
+2021-08-30 16:37:29 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Employee/Employee Detail", ["id":inid])): Send request successfully
+
+2021-08-30 16:37:29 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\12.har
+
+2021-08-30 16:37:30 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 404): Verify response status code successfully
+
+2021-08-30 16:37:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "Employee Not Found"): Verify element property value successfully
+
+2021-08-30 16:37:30 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Employee/Employee Detail" time="1.035" classname="Test Cases/Employee/Employee Detail" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:30 - [TEST_CASE][PASSED] - Test Cases/Employee/Employee Detail: Test Cases/Employee/Employee Detail
+
+2021-08-30 16:37:30 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Employee/Employee Detail", ["tokenaut":tokenaut, "url":url, "id":id])): Send request successfully
+
+2021-08-30 16:37:30 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\13.har
+
+2021-08-30 16:37:30 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-08-30 16:37:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.firstName", "William"): Verify element property value successfully
+
+2021-08-30 16:37:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:37:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.middleName", "Faisal"): Verify element property value successfully
+
+2021-08-30 16:37:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:37:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.lastName", "Mustafa"): Verify element property value successfully
+
+2021-08-30 16:37:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:37:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.code", "0002"): Verify element property value successfully
+
+2021-08-30 16:37:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-08-30 16:37:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.fullName", "William Faisal Mustafa"): Verify element property value successfully
+
+2021-08-30 16:37:31 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Employee/Save Employee Code Exists" time="1.152" classname="Test Cases/Employee/Save Employee Code Exists" status="PASSED">
+         <system-out><![CDATA[2021-08-30 16:37:31 - [TEST_CASE][PASSED] - Test Cases/Employee/Save Employee Code Exists: Test Cases/Employee/Save Employee Code Exists
+
+2021-08-30 16:37:31 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Employee/Save Employee")): Send request successfully
+
+2021-08-30 16:37:32 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\14.har
+
+2021-08-30 16:37:32 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:32 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 400): Verify response status code successfully
+
+2021-08-30 16:37:32 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-08-30 16:37:32 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error[0]", "Failed To Save: Employee Code Exists"): Verify element property value successfully
+
+2021-08-30 16:37:32 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Employee/Save Employee" time="1.186" classname="Test Cases/Employee/Save Employee" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Employee/Save Employee FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at Save Employee.run(Save Employee:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630316181668.run(TempTestSuite1630316181668.groovy:36)
+"/>
+         <system-out><![CDATA[2021-08-30 16:37:32 - [TEST_CASE][FAILED] - Test Cases/Employee/Save Employee: Test Cases/Employee/Save Employee FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at Save Employee.run(Save Employee:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630316181668.run(TempTestSuite1630316181668.groovy:36)
+
+
+2021-08-30 16:37:32 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Employee/Save Employee")): Send request successfully
+
+2021-08-30 16:37:33 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210830_163621\Main Suites\20210830_163621\requests\main\15.har
+
+2021-08-30 16:37:33 - [MESSAGE][PASSED] - Send request successfully
+
+2021-08-30 16:37:33 - [TEST_STEP][FAILED] - verifyResponseStatusCode(response, 200): Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at Save Employee.run(Save Employee:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630316181668.run(TempTestSuite1630316181668.groovy:36)
+)
+
+2021-08-30 16:37:33 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '400'
+
+2021-08-30 16:37:33 - [MESSAGE][FAILED] - Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at Save Employee.run(Save Employee:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630316181668.run(TempTestSuite1630316181668.groovy:36)
+)]]></system-out>
+         <system-err><![CDATA[2021-08-30 16:37:32 - [TEST_CASE][FAILED] - Test Cases/Employee/Save Employee: Test Cases/Employee/Save Employee FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at Save Employee.run(Save Employee:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630316181668.run(TempTestSuite1630316181668.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-08-30 16:36:45 - [TEST_SUITE][FAILED] - Main Suites: Test Cases/Employee/Save Employee FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at Save Employee.run(Save Employee:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630316181668.run(TempTestSuite1630316181668.groovy:36)]]></system-out>
+      <system-err><![CDATA[2021-08-30 16:36:45 - [TEST_SUITE][FAILED] - Main Suites: Test Cases/Employee/Save Employee FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at Save Employee.run(Save Employee:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630316181668.run(TempTestSuite1630316181668.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

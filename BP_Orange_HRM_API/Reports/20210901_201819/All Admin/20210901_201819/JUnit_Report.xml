@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="All Admin" time="13.376" tests="8" failures="0" errors="0">
+   <testsuite name="All Admin" tests="8" failures="0" errors="0" time="13.376" skipped="0" timestamp="2021-09-01 20:20:39" hostname="William FM - ITAM-MFB-180044.visionet.co.id" id="Test Suites/All Admin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\QA training\\Git\\Big Project\\BP_API_ORANGE_HRM\\BP_Orange_HRM_API\\Reports\\20210901_201819\\All Admin\\20210901_201819"/>
+         <property name="logFiles" value="D:\\QA training\\Git\\Big Project\\BP_API_ORANGE_HRM\\BP_Orange_HRM_API\\Reports\\20210901_201819\\All Admin\\20210901_201819\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="William FM - ITAM-MFB-180044.visionet.co.id"/>
+         <property name="hostAddress" value="192.168.189.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Admin/Get Organization Information" time="3.383" classname="Test Cases/Admin/Get Organization Information" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:39 - [TEST_CASE][PASSED] - Test Cases/Admin/Get Organization Information: Test Cases/Admin/Get Organization Information
+
+2021-09-01 20:20:40 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/Get Organizations")): Send request successfully
+
+2021-09-01 20:20:42 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\0.har
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.name", "Sekolah QA"): Verify element property value successfully
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-09-01 20:20:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", 1): Verify element property value successfully
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/Get User" time="0.825" classname="Test Cases/Admin/Get User" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:43 - [TEST_CASE][PASSED] - Test Cases/Admin/Get User: Test Cases/Admin/Get User
+
+2021-09-01 20:20:43 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/Get Users")): Send request successfully
+
+2021-09-01 20:20:43 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\1.har
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].employeeName", "Zidan Aqila Muhammad"): Verify element property value successfully
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-09-01 20:20:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[1].employeeName", "asdw sasd ok"): Verify element property value successfully
+
+2021-09-01 20:20:43 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Empty Password" time="0.603" classname="Test Cases/Admin/User Login Empty Password" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:43 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Empty Password: Test Cases/Admin/User Login Empty Password
+
+2021-09-01 20:20:44 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":username, "password":""])): Send request successfully
+
+2021-09-01 20:20:44 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\2.har
+
+2021-09-01 20:20:44 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:44 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-09-01 20:20:44 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:44 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "password must not be empty"): Verify element property value successfully
+
+2021-09-01 20:20:44 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Empty Username" time="1.144" classname="Test Cases/Admin/User Login Empty Username" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:44 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Empty Username: Test Cases/Admin/User Login Empty Username
+
+2021-09-01 20:20:45 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":"", "password":password])): Send request successfully
+
+2021-09-01 20:20:45 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\3.har
+
+2021-09-01 20:20:45 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-09-01 20:20:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:45 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "username must not be empty"): Verify element property value successfully
+
+2021-09-01 20:20:45 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Empty" time="0.938" classname="Test Cases/Admin/User Login Empty" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:45 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Empty: Test Cases/Admin/User Login Empty
+
+2021-09-01 20:20:46 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":"", "password":""])): Send request successfully
+
+2021-09-01 20:20:46 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\4.har
+
+2021-09-01 20:20:46 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:46 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-09-01 20:20:46 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:46 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "username must not be empty"): Verify element property value successfully
+
+2021-09-01 20:20:46 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Invalid Password" time="1.26" classname="Test Cases/Admin/User Login Invalid Password" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:46 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Invalid Password: Test Cases/Admin/User Login Invalid Password
+
+2021-09-01 20:20:47 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":username, "password":inpassword])): Send request successfully
+
+2021-09-01 20:20:47 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\5.har
+
+2021-09-01 20:20:47 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-09-01 20:20:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:47 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "Credentials Are Wrong Please Try Again"): Verify element property value successfully
+
+2021-09-01 20:20:47 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login Invalid Username" time="1.379" classname="Test Cases/Admin/User Login Invalid Username" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:47 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login Invalid Username: Test Cases/Admin/User Login Invalid Username
+
+2021-09-01 20:20:48 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login", ["username":inusername, "password":password])): Send request successfully
+
+2021-09-01 20:20:49 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\6.har
+
+2021-09-01 20:20:49 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 202): Verify response status code successfully
+
+2021-09-01 20:20:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:49 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "error.text", "Credentials Are Wrong Please Try Again"): Verify element property value successfully
+
+2021-09-01 20:20:49 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/User Login" time="1.562" classname="Test Cases/Admin/User Login" status="PASSED">
+         <system-out><![CDATA[2021-09-01 20:20:49 - [TEST_CASE][PASSED] - Test Cases/Admin/User Login: Test Cases/Admin/User Login
+
+2021-09-01 20:20:49 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Admin/User Login")): Send request successfully
+
+2021-09-01 20:20:50 - [MESSAGE][INFO] - HAR: D:\QA training\Git\Big Project\BP_API_ORANGE_HRM\BP_Orange_HRM_API\Reports\20210901_201819\All Admin\20210901_201819\requests\main\7.har
+
+2021-09-01 20:20:50 - [MESSAGE][PASSED] - Send request successfully
+
+2021-09-01 20:20:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2021-09-01 20:20:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2021-09-01 20:20:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "user.userRole", "Admin"): Verify element property value successfully
+
+2021-09-01 20:20:50 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-09-01 20:20:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "user.status", "Enabled"): Verify element property value successfully
+
+2021-09-01 20:20:50 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2021-09-01 20:20:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "user.employeeName", "Zidan Aqila Muhammad"): Verify element property value successfully
+
+2021-09-01 20:20:50 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-09-01 20:20:39 - [TEST_SUITE][PASSED] - All Admin: Test Cases/Admin/User Login]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
