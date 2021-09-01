@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Admin/Documents/AutomatedApps/BigProject">
+        <classes>
+            <class name="Test.Login.ForgotPasswordBlankUsername"></class>
+            <class name="Test.Login.ForgotPasswordInvalidUsername"></class>
+            <class name="Test.Login.ForgotPasswordValidUsername"></class>
+            <class name="Test.Login.LoginEmptyUsername"></class>
+            <class name="Test.Login.LoginWrongPassword"></class>
+            <class name="Test.Login.LoginWrongUsername"></class>
+            <class name="Test.Login.LoginBlank"></class>
+            <class name="Test.Login.LoginEmptyPassword"></class>
+            <class name="Test.Login.Logout"></class>
+            <class name="Test.SocialMedia.Facebook"></class>
+            <class name="Test.SocialMedia.LinkedIn"></class>
+            <class name="Test.SocialMedia.Twitter"></class>
+            <class name="Test.SocialMedia.Youtube"></class>
+
+        </classes>
+    </test>
+</suite>
