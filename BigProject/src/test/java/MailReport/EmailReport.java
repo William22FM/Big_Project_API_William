@@ -66,7 +66,7 @@ import javax.activation.*;
             MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 
             // Mention the file which you want to send
-            String filename = "test-output/emailable-report.html";
+            String filename = "Test Results - C__Users_Admin_Documents_AutomatedApps_BigProject_testng_xml.html";
 
             // Create data source and pass the filename
             DataSource source = new FileDataSource(filename);
