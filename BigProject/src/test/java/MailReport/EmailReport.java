@@ -60,7 +60,7 @@ import javax.activation.*;
             BodyPart messageBodyPart1 = new MimeBodyPart();
 
             // Set the body of email
-            messageBodyPart1.setText("This is message body");
+            messageBodyPart1.setText("This is report message");
 
             // Create another object to add another content
             MimeBodyPart messageBodyPart2 = new MimeBodyPart();
